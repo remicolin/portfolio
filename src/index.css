@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  body {
+    @apply font-[Raleway] text-stone-800 font-bold;
+  }
+
+  li {
+    @apply px-4;
+    @apply cursor-pointer;
+  }
+
+
+  .chapter {
+    @apply w-full h-screen bg-white
+  }
+
+  .text-my-blue {
+    @apply text-[#3772FF]
+  }
+
+  .nav-bar {
+    @apply fixed w-full h-[80px] flex justify-between items-center px-4 bg-white
+  }
+
+  p {
+    @apply text-stone-800 font-bold
+  }
+
+  .button-card {
+    @apply font-bold mx-2 text-white border-2 px-2 py-1 items-center text-lg
+  }
+
+  .button-card:hover {
+    @apply font-bold mx-2 border-2 px-2 py-1 items-center text-black bg-white border-white text-lg
+  }
+
+}
+
+@layer components {}
+
+.content-div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+}
+
+.content-div:hover {
+  background-image: linear-gradient(to right,
+      rgba(112, 157, 255, 0.8),
+      hsla(242, 74%, 61%, 0.8)) !important;
+}
