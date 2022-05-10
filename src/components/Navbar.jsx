@@ -37,6 +37,9 @@ const Navbar = () => {
             <div className='hidden md:flex'>
                 <ul className='hidden md:flex'>
                     <li>
+                        <a href="/101010110" className='hover:text-green-600'>101010110</a>
+                    </li>
+                    <li>
                         <Link className='hover:text-my-blue' to="home" smooth={true} duration={500} >
                             Home
                         </Link>

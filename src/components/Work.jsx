@@ -4,10 +4,11 @@ import RealEstate from '../assets/realestate.jpg'
 import Nako from '../assets/nako.png'
 import Dex from '../assets/dex.png'
 import TokenVendor from '../assets/token-vendor.png'
+import HeadOrTail from '../assets/headortail.png'
 
 const Work = () => {
     return (
-        <div name='work' className='w-full md:h-screen bg-white'>
+        <div name='work' className='w-full md:mb-8 bg-white'>
 
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
 
@@ -28,6 +29,18 @@ const Work = () => {
                                 <div className='pt-8 text-center'>
                                     <a href="https://fluttering-design.surge.sh/"><button className='button-card'>Demo</button></a>
                                     <a href="https://github.com/remicolin/yarn-dex"><button className='button-card'>Code</button></a>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <div style={{ backgroundImage: `url(${HeadOrTail})` }} className='shadow-lg shadow-gray-300 group container rounded-md flex justify-center items-center mx-auto content-div'>
+
+                        {/* Hover effect */}
+                        <div className='opacity-0 group-hover:opacity-100 items-center justify-center'>
+                            <span className='text-2xl font-bold text-white text-center tracking-wider'>
+                                <p className='text-white'>Head or Tail</p>
+                                <div className='pt-8 text-center'>
+                                    <a href="/101010110"><button className='button-card'>Demo</button></a>
                                 </div>
                             </span>
                         </div>

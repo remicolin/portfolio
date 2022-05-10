@@ -22,6 +22,15 @@ const Home = () => {
         const address = await newAccount.getAddress();
         setDefaultAccount(address);
     }
+    async function connect() {
+        if (window.ethereum) {
+            const provider = new ethers.providers.Web3Provider(window.ethereum)
+        }
+    }
+
+
+
+
     return (
         <div name='home' className='chapter'>
 

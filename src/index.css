@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap');
+
 
 @layer base {
   body {
@@ -23,6 +25,11 @@
     @apply text-[#3772FF]
   }
 
+  .text-my-green {
+    @apply text-green-600 text-xl;
+
+  }
+
   .nav-bar {
     @apply fixed w-full h-[80px] flex justify-between items-center px-4 bg-white
   }
@@ -37,6 +44,19 @@
 
   .button-card:hover {
     @apply font-bold mx-2 border-2 px-2 py-1 items-center text-black bg-white border-white text-lg
+  }
+
+  .hbutton {
+    @apply font-bold text-xl border-2 px-2 py-0 mt-1 mb-2 items-center border-green-600
+  }
+
+  .hbutton:hover {
+    @apply text-black bg-green-600
+  }
+
+  .hack {
+    @apply text-green-600 text-2xl;
+    font-family: IBM Plex Mono;
   }
 
 }
